@@ -58,6 +58,32 @@ git version 2.20.1
 Python 2.7.16
 ```
 
+### Atom
+日本語が表示できない。  
+いい方法が見つからない。諦める。  
+
+## VSCode
+
+当然入っていない。
+
+```
+curl -L "https://go.microsoft.com/fwlink/?LinkID=760868" > vscode.deb
+sudo apt install ./vscode.deb
+```
+
+やはり日本語が表示できない。
+
+```
+sudo apt-get install fonts-noto
+```
+
+### 参考
+#### インストール
+https://medium.com/satsangah/chromebook%E3%81%A7%E3%82%82visual-studio-code-%E3%82%92%E4%BD%BF%E3%81%8A%E3%81%86-f669a6e4d3b7
+
+#### 日本語化
+https://uepon.hatenadiary.com/entry/2019/02/03/192956
+
 ### Office
 
 Dropbox上のExcelを開こうとしてみた。  
@@ -71,19 +97,13 @@ Dropbox上のExcelを開こうとしてみた。
 Webは行けるが…  
 ローカルにマウントしたい。
 
-## 課題
+### Youtube
 
-- Youtubeが再生できない
-    - ハードウェアアクセラレータをOffにすれば映るようだが、設定から見つからない。
-- Linuxから日本語入力できるエディタがない
-    - 一応Textがあるが、Linuxから起動できるエディタを探す。
-- Slackにログインできない
-    - ブラウザ版を使用する。
-- 開発環境を整える（まだ確認していないもの込）
-    - エディタ
-        - viはある。
-    - git
-    - docker
-    - maven
-    - python
-    - Office
+再生できない。
+
+ハードウェアアクセラレータをOffにすれば映るようだが、設定から見つからない。
+
+### Text
+
+エディタの一つ。
+
