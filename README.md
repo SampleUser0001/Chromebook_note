@@ -1,4 +1,5 @@
-[TOC]
+
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 # Chomebook Note
 
@@ -120,7 +121,7 @@ sudo apt install -y fcitx-mozc
 fcitxアプリを起動
 
 ```
-
+fcitx-configtool
 ```
 
 ##### 参考
