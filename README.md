@@ -27,6 +27,13 @@ Alt + Shift + M
 
 https://chrome.google.com/webstore/detail/text/mmfbcljfglbokpmkimbfghdkjmjhdgbg?hl=ja
 
+### lifesizeインストール
+
+…できない！  
+chromeでアクセスできるっぽい。  
+マイクが有効かどうか確認したい。  
+確認した。一応大丈夫そう。
+
 ## パッケージ
 
 aptが使用できる。
@@ -47,9 +54,23 @@ git version 2.20.1
 ### docker
 インストールされていない。
 
+```
+sudo apt install docker
+```
+
+### docker-compose
+
+```
+sudo apt install docker-compose
+```
+
 ### maven
 
 インストールされていない
+
+```
+sudo apt install maven
+``` 
 
 ### python 
 
@@ -58,9 +79,14 @@ git version 2.20.1
 Python 2.7.16
 ```
 
+3は別で入っている。
+```
+ittimfn@penguin:~$ python3 --version
+Python 3.7.3
+```
+
 ### Atom
-日本語が表示できない。  
-いい方法が見つからない。諦める。  
+後でもう一回入れたい。
 
 ## VSCode
 
@@ -73,15 +99,31 @@ sudo apt install ./vscode.deb
 
 やはり日本語が表示できない。
 
-```
-sudo apt-get install fonts-noto
-```
-
 ### 参考
 #### インストール
 https://medium.com/satsangah/chromebook%E3%81%A7%E3%82%82visual-studio-code-%E3%82%92%E4%BD%BF%E3%81%8A%E3%81%86-f669a6e4d3b7
 
-#### 日本語化
+### 日本語化
+フォントインストールと日本語入力機能が必要。
+
+#### フォントインストール
+```
+sudo apt-get install fonts-noto
+```
+
+#### 日本語入力機能
+
+```
+sudo apt install -y fcitx-mozc
+```
+
+fcitxアプリを起動
+
+```
+
+```
+
+##### 参考
 https://uepon.hatenadiary.com/entry/2019/02/03/192956
 
 ### Office
@@ -91,6 +133,9 @@ Dropbox上のExcelを開こうとしてみた。
 
 - Excel for the web
 - Google Sheets
+
+Excel for the webは起動できた。  
+GOogle Sheetsは起動できない。
 
 ### Dropbox
 
@@ -107,3 +152,14 @@ Webは行けるが…
 
 エディタの一つ。
 
+## 端末そのものについて
+
+### ディスク容量
+
+64GBモデルで40GBくらいの空き。
+
+https://qiita.com/shibukawa/items/7200bd9d0afa6c0d4ed1
+
+### ターミナルからアプリを起動する方法
+
+調べる。
