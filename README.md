@@ -1,4 +1,42 @@
-[TOC]
+
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [Chomebook Note](#chomebook-note)
+  - [概要](#概要)
+  - [操作](#操作)
+    - [ファイルマネージャを開く](#ファイルマネージャを開く)
+    - [ファイルの扱い](#ファイルの扱い)
+  - [実施したこと](#実施したこと)
+    - [Linux（ベータ版）の有効化](#linuxベータ版の有効化)
+    - [Textインストール](#textインストール)
+    - [lifesizeインストール](#lifesizeインストール)
+  - [パッケージ](#パッケージ)
+    - [git](#git)
+    - [docker](#docker)
+      - [参考](#参考)
+    - [docker-compose](#docker-compose)
+    - [maven](#maven)
+    - [python](#python)
+    - [Atom](#atom)
+  - [VSCode](#vscode)
+    - [参考](#参考-1)
+      - [インストール](#インストール)
+    - [日本語化](#日本語化)
+      - [フォントインストール](#フォントインストール)
+      - [日本語入力機能](#日本語入力機能)
+      - [日本語入力切り替え](#日本語入力切り替え)
+        - [参考](#参考-2)
+    - [Office](#office)
+    - [Dropbox](#dropbox)
+    - [Youtube](#youtube)
+    - [Text](#text)
+  - [端末そのものについて](#端末そのものについて)
+    - [ディスク容量](#ディスク容量)
+    - [ターミナルからアプリを起動する方法](#ターミナルからアプリを起動する方法)
+
+<!-- /code_chunk_output -->
 
 # Chomebook Note
 
@@ -57,6 +95,28 @@ git version 2.20.1
 ```
 sudo apt install docker
 ```
+
+インストールするだけでは足りない。
+
+```
+cat /etc/group | grep docker
+```
+
+dockerグループがない場合実行。
+```
+sudo groupadd docker
+```
+
+```
+sudo usermod -aG docker $USER
+groups $USER
+```
+
+reboot.
+
+#### 参考
+
+https://www.virment.com/how-to-fix-couldnt-connect-to-docker-daemon/
 
 ### docker-compose
 
@@ -125,8 +185,12 @@ sudo apt install -y fcitx-mozc
 fcitxアプリを起動
 
 ```
-
+fcitx-configtool
 ```
+
+#### 日本語入力切り替え
+
+ctrl + space
 
 ##### 参考
 https://uepon.hatenadiary.com/entry/2019/02/03/192956
